@@ -1,16 +1,23 @@
-# laravel-project-13
+# Project 13
 
-===========================
+Start Laravel project
 
-EC2 script on creation to install the CodeDeploy Agent:
+Use composer to install dependencies
+
+Deploy code to AWS Elastic Beanstalk
+
+====================
 
 ```
-#!/bin/bash
-sudo yum -y update
-sudo yum -y install ruby
-sudo yum -y install wget
-cd /home/ec2-user
-wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-sudo chmod +x ./install
-sudo ./install auto
+1. Go to Elastic Beanstalk
+
+2. Create Application
+
+3. Enter app name and select PHP as platform
+
+4. Zip code with zip ../laravel-default.zip -r * .[^.]* -x "vendor/*" ".git/*"
+
+5. Upload your code (zip file)
+
 ```
+
